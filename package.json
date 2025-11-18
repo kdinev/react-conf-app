@@ -6,6 +6,7 @@
   "dependencies": {
     "@igniteui/material-icons-extended": "^3.0.0",
     "@infragistics/igniteui-react": "~19.3.0",
+    "@infragistics/igniteui-react-grids": "~19.3.0",
     "@testing-library/jest-dom": "^6.9.1",
     "@testing-library/react": "^16.3.0",
     "element-internals-polyfill": "^3.0.2",
