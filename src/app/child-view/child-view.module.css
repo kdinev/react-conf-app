@@ -2,11 +2,10 @@
   display: flex;
   flex-direction: column;
 }
-.main-page-container {
+.child-view-container {
   justify-content: flex-start;
   align-items: stretch;
   align-content: flex-start;
-  gap: 0;
   height: 100%;
 }
 .row-layout {
@@ -108,7 +107,7 @@
   min-height: 50px;
   flex-shrink: 0;
 }
-.feature-card-1 {
+.feature-card {
   height: max-content;
   min-width: 240px;
   flex-grow: 1;
@@ -142,7 +141,7 @@
   flex-grow: 1;
   flex-basis: 0;
 }
-.agenda-tab-day-1 {
+.agenda-tab-day {
   min-width: 100%;
 }
 .day1-agenda {

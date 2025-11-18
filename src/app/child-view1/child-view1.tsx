@@ -1,10 +1,10 @@
 import { IgrButton, IgrInput } from '@infragistics/igniteui-react';
 import { useState } from 'react';
-import styles from './register-page.module.css';
+import styles from './child-view1.module.css';
 import createClassTransformer from '../style-utils';
 import '/src/app/base-view-styles.css';
 
-export default function RegisterPage() {
+export default function ChildView1() {
   const classes = createClassTransformer(styles);
   const [value, setValue] = useState<string | undefined>();
   const [value1, setValue1] = useState<string | undefined>();
@@ -12,7 +12,7 @@ export default function RegisterPage() {
 
   return (
     <>
-      <div className={classes("row-layout register-page-container")}>
+      <div className={classes("column-layout child-view-1-container")}>
         <div className={classes("row-layout registration-form-container")}>
           <div className={classes("column-layout registration-form")}>
             <h4 className={classes("registration-title")}>

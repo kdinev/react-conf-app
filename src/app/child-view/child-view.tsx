@@ -1,14 +1,14 @@
 import { IgrAccordion, IgrAvatar, IgrButton, IgrCard, IgrCardActions, IgrCardContent, IgrCardHeader, IgrExpansionPanel, IgrList, IgrListItem, IgrTab, IgrTabs } from '@infragistics/igniteui-react';
-import styles from './main-page.module.css';
+import styles from './child-view.module.css';
 import createClassTransformer from '../style-utils';
 import '/src/app/base-view-styles.css';
 
-export default function MainPage() {
+export default function ChildView() {
   const classes = createClassTransformer(styles);
 
   return (
     <>
-      <div className={classes("column-layout main-page-container")}>
+      <div className={classes("column-layout child-view-container")}>
         <div className={classes("row-layout hero-section")}>
           <div className={classes("row-layout hero-content-container")}>
             <div className={classes("column-layout hero-content")}>
@@ -43,7 +43,7 @@ export default function MainPage() {
               </h6>
             </div>
             <div className={classes("row-layout feature-cards")}>
-              <IgrCard className={classes("feature-card-1")}>
+              <IgrCard className={classes("feature-card")}>
                 <IgrCardHeader>
                   <h3 slot="title">
                     <span> </span>
@@ -78,7 +78,7 @@ export default function MainPage() {
                   </div>
                 </IgrCardActions>
               </IgrCard>
-              <IgrCard className={classes("feature-card-1")}>
+              <IgrCard className={classes("feature-card")}>
                 <IgrCardHeader>
                   <h3 slot="title">
                     <span> </span>
@@ -113,7 +113,7 @@ export default function MainPage() {
                   </div>
                 </IgrCardActions>
               </IgrCard>
-              <IgrCard className={classes("feature-card-1")}>
+              <IgrCard className={classes("feature-card")}>
                 <IgrCardHeader>
                   <h3 slot="title">
                     <span> </span>
@@ -163,7 +163,7 @@ export default function MainPage() {
             </div>
             <div className={classes("row-layout feature-cards")}>
               <IgrTabs alignment="justify" className={classes("agenda-tabs")}>
-                <IgrTab selected={true} className={classes("agenda-tab-day-1")}>
+                <IgrTab selected={true} className={classes("agenda-tab-day")}>
                   <span slot="label">
                     <span className={classes("material-icons")}>
                       <span>info</span>
@@ -222,7 +222,7 @@ export default function MainPage() {
                     </div>
                   </div>
                 </IgrTab>
-                <IgrTab className={classes("agenda-tab-day-1")}>
+                <IgrTab className={classes("agenda-tab-day")}>
                   <span slot="label">
                     <span className={classes("material-icons")}>
                       <span>info</span>
@@ -290,7 +290,7 @@ export default function MainPage() {
               </h6>
             </div>
             <div className={classes("row-layout feature-cards")}>
-              <IgrCard className={classes("feature-card-1")}>
+              <IgrCard className={classes("feature-card")}>
                 <IgrCardHeader>
                   <h3 slot="title">
                     <span>Jane Doe</span>
@@ -325,7 +325,7 @@ export default function MainPage() {
                   </div>
                 </IgrCardActions>
               </IgrCard>
-              <IgrCard className={classes("feature-card-1")}>
+              <IgrCard className={classes("feature-card")}>
                 <IgrCardHeader>
                   <h3 slot="title">
                     <span>John Smith</span>
@@ -360,7 +360,7 @@ export default function MainPage() {
                   </div>
                 </IgrCardActions>
               </IgrCard>
-              <IgrCard className={classes("feature-card-1")}>
+              <IgrCard className={classes("feature-card")}>
                 <IgrCardHeader>
                   <h3 slot="title">
                     <span>Emily White</span>
@@ -395,7 +395,7 @@ export default function MainPage() {
                   </div>
                 </IgrCardActions>
               </IgrCard>
-              <IgrCard className={classes("feature-card-1")}>
+              <IgrCard className={classes("feature-card")}>
                 <IgrCardHeader>
                   <h3 slot="title">
                     <span>David Green</span>
@@ -430,7 +430,7 @@ export default function MainPage() {
                   </div>
                 </IgrCardActions>
               </IgrCard>
-              <IgrCard className={classes("feature-card-1")}>
+              <IgrCard className={classes("feature-card")}>
                 <IgrCardHeader>
                   <h3 slot="title">
                     <span>Sarah Johnson</span>
@@ -465,7 +465,7 @@ export default function MainPage() {
                   </div>
                 </IgrCardActions>
               </IgrCard>
-              <IgrCard className={classes("feature-card-1")}>
+              <IgrCard className={classes("feature-card")}>
                 <IgrCardHeader>
                   <h3 slot="title">
                     <span>Michael Brown</span>
@@ -514,7 +514,7 @@ export default function MainPage() {
               </h6>
             </div>
             <div className={classes("row-layout feature-cards")}>
-              <IgrCard className={classes("feature-card-1")}>
+              <IgrCard className={classes("feature-card")}>
                 <IgrCardHeader>
                   <h3 slot="title">
                     <span> </span>
@@ -591,7 +591,7 @@ export default function MainPage() {
                   </div>
                 </IgrCardContent>
               </IgrCard>
-              <IgrCard className={classes("feature-card-1")}>
+              <IgrCard className={classes("feature-card")}>
                 <IgrCardHeader>
                   <h3 slot="title">
                     <span> </span>

@@ -1,19 +1,17 @@
 import { IgrButton, IgrCheckbox, IgrInput } from '@infragistics/igniteui-react';
-import { useNavigate } from 'react-router-dom';
 import { useState } from 'react';
-import styles from './login-page.module.css';
+import styles from './child-view2.module.css';
 import createClassTransformer from '../style-utils';
 import '/src/app/base-view-styles.css';
 
-export default function LoginPage() {
+export default function ChildView2() {
   const classes = createClassTransformer(styles);
-  const navigate = useNavigate();
   const [value, setValue] = useState<string | undefined>();
   const [value1, setValue1] = useState<string | undefined>();
 
   return (
     <>
-      <div className={classes("row-layout login-page-container")}>
+      <div className={classes("column-layout child-view-2-container")}>
         <div className={classes("row-layout login-form-container")}>
           <div className={classes("column-layout login-form")}>
             <h4 className={classes("content")}>
@@ -42,7 +40,7 @@ export default function LoginPage() {
               <p className={classes("typography__body-2 content")}>
                 <span>Don't have an account?</span>
               </p>
-              <a onClick={() => navigate(`/register-page`)} className={classes("typography__body-2 login-create-account")}>
+              <a className={classes("typography__body-2 login-forgot-password")}>
                 <span>Create new account</span>
               </a>
             </div>

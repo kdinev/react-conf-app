@@ -1,11 +1,11 @@
 import { redirect } from 'react-router-dom';
-import MainPage from './main-page/main-page';
-import RegisterPage from './register-page/register-page';
-import LoginPage from './login-page/login-page';
+import ChildView from './child-view/child-view';
+import ChildView1 from './child-view1/child-view1';
+import ChildView2 from './child-view2/child-view2';
 
 export const routes = [
-  { index: true, loader: () => redirect('main-page') },
-  { path: 'main-page', element: <MainPage />, text: 'Main Page' },
-  { path: 'register-page', element: <RegisterPage />, text: 'Register Page' },
-  { path: 'login-page', element: <LoginPage />, text: 'Login Page' }
+  { index: true, loader: () => redirect('child-view') },
+  { path: 'child-view', element: <ChildView />, text: 'Child View' },
+  { path: 'child-view1', element: <ChildView1 />, text: 'Child View1' },
+  { path: 'child-view2', element: <ChildView2 />, text: 'Child View2' }
 ];
