@@ -1,11 +1,12 @@
-import { IgrIconButton, IgrNavbar } from '@infragistics/igniteui-react';
-import { Outlet } from 'react-router-dom';
+import { IgrButton, IgrIconButton, IgrNavbar } from '@infragistics/igniteui-react';
+import { Outlet, useNavigate } from 'react-router-dom';
 import styles from './app.module.css';
 import createClassTransformer from './style-utils';
 import '/src/app/base-view-styles.css';
 
 export default function App() {
   const classes = createClassTransformer(styles);
+  const navigate = useNavigate();
 
   return (
     <>
@@ -43,6 +44,11 @@ export default function App() {
                 <span>more_vert</span>
               </span>
             </IgrIconButton>
+          </div>
+          <div style={{ display: 'contents' }} slot="end">
+            <IgrButton type="button" onClick={() => navigate(`/child-view2`)} className={classes("login-button")}>
+              <span>Login</span>
+            </IgrButton>
           </div>
         </IgrNavbar>
         <div className={classes("view-container")}>

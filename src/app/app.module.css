@@ -29,6 +29,10 @@
   min-height: 0;
   flex-grow: 1;
 }
+.login-button {
+  --ig-size: var(--ig-size-medium);
+  height: max-content;
+}
 .h6 {
   margin: 0;
   flex-shrink: 0;
