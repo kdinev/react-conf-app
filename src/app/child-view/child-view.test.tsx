@@ -1,9 +1,9 @@
 import { expect, test } from 'vitest';
 import { render } from '@testing-library/react';
-import RegisterPage from './register-page';
+import ChildView from './child-view';
 import 'element-internals-polyfill';
 
-test('renders RegisterPage component', () => {
-  const wrapper = render(<RegisterPage />);
+test('renders ChildView component', () => {
+  const wrapper = render(<ChildView />);
   expect(wrapper).toBeTruthy();
 });
